@@ -1,0 +1,489 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "d812e9cfe4a86bb7dd28faa24dbe4285",
+    "packages": [
+        {
+            "name": "fpdf/fpdf",
+            "version": "1.86.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/coreydoughty/Fpdf.git",
+                "reference": "d2a0cbd9e4b5557b9c6c29ddc8eb2b36d8761e00"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/coreydoughty/Fpdf/zipball/d2a0cbd9e4b5557b9c6c29ddc8eb2b36d8761e00",
+                "reference": "d2a0cbd9e4b5557b9c6c29ddc8eb2b36d8761e00",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "FPDF": "Fpdf\\Fpdf"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Fpdf\\": "src/Fpdf"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Corey Doughty",
+                    "email": "corey@doughty.ca"
+                }
+            ],
+            "description": "FPDF Composer Wrapper",
+            "homepage": "https://github.com/coreydoughty/Fpdf",
+            "keywords": [
+                "fpdf",
+                "pdf",
+                "wrapper"
+            ],
+            "support": {
+                "issues": "https://github.com/coreydoughty/Fpdf/issues",
+                "source": "https://github.com/coreydoughty/Fpdf/tree/1.86.0"
+            },
+            "time": "2023-07-04T16:41:45+00:00"
+        },
+        {
+            "name": "gp/dbms",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/periyandavar/gp_dbms.git",
+                "reference": "ccdb6b7010c7675f0a768420be7ef0183ae7779c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/periyandavar/gp_dbms/zipball/ccdb6b7010c7675f0a768420be7ef0183ae7779c",
+                "reference": "ccdb6b7010c7675f0a768420be7ef0183ae7779c",
+                "shasum": ""
+            },
+            "require": {
+                "gp/loader": "^1.0",
+                "gp/validator": "^1.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.72",
+                "mockery/mockery": "^1.6",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^9.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Database\\": "src\\"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Periyandavar Ganesh",
+                    "email": "vickyperiyandavar@gmail.com"
+                }
+            ],
+            "description": "Simple PHP Database tool with QueryParam class supports mysqli and pdo",
+            "support": {
+                "issues": "https://github.com/periyandavar/gp_dbms/issues",
+                "source": "https://github.com/periyandavar/gp_dbms/tree/v1.0.3"
+            },
+            "time": "2025-03-23T06:00:14+00:00"
+        },
+        {
+            "name": "gp/loader",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/periyandavar/gp_loader.git",
+                "reference": "b4c08f62252cae9c1c8b5d0b70c4a4c9385cf87a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/periyandavar/gp_loader/zipball/b4c08f62252cae9c1c8b5d0b70c4a4c9385cf87a",
+                "reference": "b4c08f62252cae9c1c8b5d0b70c4a4c9385cf87a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.72",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^9.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Loader\\": "src//"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "periyandavar-ganesh",
+                    "email": "vickyperiyandavar@gmail.com"
+                }
+            ],
+            "description": "A Loader library to autoload the classes and a container to support the dependency injections",
+            "support": {
+                "issues": "https://github.com/periyandavar/gp_loader/issues",
+                "source": "https://github.com/periyandavar/gp_loader/tree/v1.2.0"
+            },
+            "time": "2025-03-23T06:13:04+00:00"
+        },
+        {
+            "name": "gp/logger",
+            "version": "v0.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/periyandavar/gp_logger.git",
+                "reference": "5b81fe1ce1c8f15339709b662b9980b6e6077008"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/periyandavar/gp_logger/zipball/5b81fe1ce1c8f15339709b662b9980b6e6077008",
+                "reference": "5b81fe1ce1c8f15339709b662b9980b6e6077008",
+                "shasum": ""
+            },
+            "require": {
+                "gp/loader": "^1.1",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.72",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^9.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Logger\\": "src//"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Periyandavar Ganesh",
+                    "email": "vickyperiyandavar@gmail.com"
+                }
+            ],
+            "description": "A simple logger interface tool",
+            "support": {
+                "issues": "https://github.com/periyandavar/gp_logger/issues",
+                "source": "https://github.com/periyandavar/gp_logger/tree/v0.0.2"
+            },
+            "time": "2025-03-22T16:57:11+00:00"
+        },
+        {
+            "name": "gp/router",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/periyandavar/gp_router.git",
+                "reference": "e53a244dfb310f624a5bc1cd19f93a036a92883f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/periyandavar/gp_router/zipball/e53a244dfb310f624a5bc1cd19f93a036a92883f",
+                "reference": "e53a244dfb310f624a5bc1cd19f93a036a92883f",
+                "shasum": ""
+            },
+            "require": {
+                "gp/loader": "^1.1",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.72",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^9.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Router\\": "src//"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Periyandavar Ganesh",
+                    "email": "vickyperiyandavar@gmail.com"
+                }
+            ],
+            "description": "A router library for php",
+            "support": {
+                "issues": "https://github.com/periyandavar/gp_router/issues",
+                "source": "https://github.com/periyandavar/gp_router/tree/v1.0.0"
+            },
+            "time": "2025-03-22T16:52:37+00:00"
+        },
+        {
+            "name": "gp/sys",
+            "version": "v0.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/periyandavar/gp_sys.git",
+                "reference": "1aeb61d898af462b57a9394671185b82bac0218c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/periyandavar/gp_sys/zipball/1aeb61d898af462b57a9394671185b82bac0218c",
+                "reference": "1aeb61d898af462b57a9394671185b82bac0218c",
+                "shasum": ""
+            },
+            "require": {
+                "fpdf/fpdf": "^1.86",
+                "gp/dbms": "^1.0",
+                "gp/loader": "^1.1",
+                "gp/logger": "^0.0.2",
+                "gp/router": "^1.0",
+                "gp/validator": "^1.0",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.73",
+                "mockery/mockery": "^1.6",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^9.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "System\\": "src\\"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Periyandavar Ganesh",
+                    "email": "vickyperiyandavar@gmail.com"
+                }
+            ],
+            "description": "A simple PHP MVC framework with ORM, autoload, DI, Validator, etc support for simple application",
+            "support": {
+                "issues": "https://github.com/periyandavar/gp_sys/issues",
+                "source": "https://github.com/periyandavar/gp_sys/tree/v0.0.0"
+            },
+            "time": "2025-03-23T06:21:27+00:00"
+        },
+        {
+            "name": "gp/validator",
+            "version": "v1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/periyandavar/gp_validator.git",
+                "reference": "ee1d13adb52b95361fc30bcc120086f69939005b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/periyandavar/gp_validator/zipball/ee1d13adb52b95361fc30bcc120086f69939005b",
+                "reference": "ee1d13adb52b95361fc30bcc120086f69939005b",
+                "shasum": ""
+            },
+            "require": {
+                "mockery/mockery": "^1.6",
+                "php": "^8.0"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.72",
+                "phpstan/phpstan": "^2.1",
+                "phpunit/phpunit": "^9.6"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Validator\\": "src//"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Periyandavar Ganesh",
+                    "email": "vickyperiyandavar@gmail.com"
+                }
+            ],
+            "description": "A validator package for php web application",
+            "support": {
+                "issues": "https://github.com/periyandavar/gp_validator/issues",
+                "source": "https://github.com/periyandavar/gp_validator/tree/v1.0.1"
+            },
+            "time": "2025-03-23T05:35:50+00:00"
+        },
+        {
+            "name": "hamcrest/hamcrest-php",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/hamcrest/hamcrest-php.git",
+                "reference": "8c3d0a3f6af734494ad8f6fbbee0ba92422859f3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/hamcrest/hamcrest-php/zipball/8c3d0a3f6af734494ad8f6fbbee0ba92422859f3",
+                "reference": "8c3d0a3f6af734494ad8f6fbbee0ba92422859f3",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^5.3|^7.0|^8.0"
+            },
+            "replace": {
+                "cordoval/hamcrest-php": "*",
+                "davedevelopment/hamcrest-php": "*",
+                "kodova/hamcrest-php": "*"
+            },
+            "require-dev": {
+                "phpunit/php-file-iterator": "^1.4 || ^2.0",
+                "phpunit/phpunit": "^4.8.36 || ^5.7 || ^6.5 || ^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.1-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "hamcrest"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "This is the PHP port of Hamcrest Matchers",
+            "keywords": [
+                "test"
+            ],
+            "support": {
+                "issues": "https://github.com/hamcrest/hamcrest-php/issues",
+                "source": "https://github.com/hamcrest/hamcrest-php/tree/v2.0.1"
+            },
+            "time": "2020-07-09T08:09:16+00:00"
+        },
+        {
+            "name": "mockery/mockery",
+            "version": "1.6.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mockery/mockery.git",
+                "reference": "1f4efdd7d3beafe9807b08156dfcb176d18f1699"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mockery/mockery/zipball/1f4efdd7d3beafe9807b08156dfcb176d18f1699",
+                "reference": "1f4efdd7d3beafe9807b08156dfcb176d18f1699",
+                "shasum": ""
+            },
+            "require": {
+                "hamcrest/hamcrest-php": "^2.0.1",
+                "lib-pcre": ">=7.0",
+                "php": ">=7.3"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^8.5 || ^9.6.17",
+                "symplify/easy-coding-standard": "^12.1.14"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "library/helpers.php",
+                    "library/Mockery.php"
+                ],
+                "psr-4": {
+                    "Mockery\\": "library/Mockery"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Pádraic Brady",
+                    "email": "padraic.brady@gmail.com",
+                    "homepage": "https://github.com/padraic",
+                    "role": "Author"
+                },
+                {
+                    "name": "Dave Marshall",
+                    "email": "dave.marshall@atstsolutions.co.uk",
+                    "homepage": "https://davedevelopment.co.uk",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Nathanael Esayeas",
+                    "email": "nathanael.esayeas@protonmail.com",
+                    "homepage": "https://github.com/ghostwriter",
+                    "role": "Lead Developer"
+                }
+            ],
+            "description": "Mockery is a simple yet flexible PHP mock object framework",
+            "homepage": "https://github.com/mockery/mockery",
+            "keywords": [
+                "BDD",
+                "TDD",
+                "library",
+                "mock",
+                "mock objects",
+                "mockery",
+                "stub",
+                "test",
+                "test double",
+                "testing"
+            ],
+            "support": {
+                "docs": "https://docs.mockery.io/",
+                "issues": "https://github.com/mockery/mockery/issues",
+                "rss": "https://github.com/mockery/mockery/releases.atom",
+                "security": "https://github.com/mockery/mockery/security/advisories",
+                "source": "https://github.com/mockery/mockery"
+            },
+            "time": "2024-05-16T03:13:13+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": [],
+    "plugin-api-version": "2.0.0"
+}

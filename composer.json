@@ -1,0 +1,16 @@
+{
+    "name": "gp/sys_template",
+    "description": "A sample sys template application",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Periyandavar Ganesh",
+            "email": "vickyperiyandavar@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "gp/sys": "^0.0.0"
+    }
+}
