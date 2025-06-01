@@ -1,1 +1,7 @@
 /vendor/
+vendor/*
+coverage/*
+/logs/
+*gradle*
+.php-cs-fixer.cache
+.phpunit.result.cache
