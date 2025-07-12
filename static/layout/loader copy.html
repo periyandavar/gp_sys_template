@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>3D Loader Test</title>
+  <style>
+    :root {
+      --background: #121621;
+    }
+
+    body {
+      background: var(--background);
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .loader-wrapper {
+      transition: opacity 1s ease;
+    }
+
+    .loader-wrapper.fade-out {
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .loader {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 10px solid rgba(255, 255, 255, 0.1);
+      border-top-color: #2f71ff;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .main-content {
+      display: none;
+    }
+
+    .main-content.visible {
+      display: block;
+      color: white;
+      font-size: 24px;
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-wrapper">
+    <div class="loader"></div>
+    <small style="color: white">Loader active for 2 minutes...</small>
+  </div>
+
+  <div class="main-content">
+    <h1>Welcome to the website!</h1>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        const loader = document.querySelector('.loader-wrapper');
+        const main = document.querySelector('.main-content');
+        loader.classList.add('fade-out');
+
+        // Wait for fade-out to finish
+        setTimeout(() => {
+          loader.style.display = 'none';
+          main.classList.add('visible');
+        }, 1000);
+      }, 120000); // 2 minutes = 120000ms
+    });
+  </script>
+</body>
+</html>
