@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "68133226955c8ec806df51f8235f8267",
+    "content-hash": "5bbf37875f80db15ee27bfe29a858dd7",
     "packages": [
         {
             "name": "fpdf/fpdf",
@@ -61,16 +61,16 @@
         },
         {
             "name": "gp/dbms",
-            "version": "1.0.8",
+            "version": "1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/periyandavar/gp_dbms",
-                "reference": "5f4315490600973a3c67a761819ee0a727ae6443"
+                "reference": "cc5188961f910e14c0b5d38c9cea465529ef4611"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/periyandavar/gp_dbms/zipball/5f4315490600973a3c67a761819ee0a727ae6443",
-                "reference": "5f4315490600973a3c67a761819ee0a727ae6443",
+                "url": "https://api.github.com/repos/periyandavar/gp_dbms/zipball/cc5188961f910e14c0b5d38c9cea465529ef4611",
+                "reference": "cc5188961f910e14c0b5d38c9cea465529ef4611",
                 "shasum": ""
             },
             "require": {
@@ -101,7 +101,7 @@
                 }
             ],
             "description": "Simple PHP Database tool with QueryParam class supports mysqli and pdo",
-            "time": "2025-06-01T08:32:47+00:00"
+            "time": "2025-07-12T18:29:06+00:00"
         },
         {
             "name": "gp/loader",
@@ -233,21 +233,21 @@
         },
         {
             "name": "gp/sys",
-            "version": "0.0.2",
+            "version": "0.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/periyandavar/gp_sys",
-                "reference": "adf66ab8dd9f762faa339eba451cbdb42c05b6a1"
+                "reference": "9c158e15683d9184f4f4a9b1c1e9048ababcffb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/periyandavar/gp_sys/zipball/adf66ab8dd9f762faa339eba451cbdb42c05b6a1",
-                "reference": "adf66ab8dd9f762faa339eba451cbdb42c05b6a1",
+                "url": "https://api.github.com/repos/periyandavar/gp_sys/zipball/9c158e15683d9184f4f4a9b1c1e9048ababcffb9",
+                "reference": "9c158e15683d9184f4f4a9b1c1e9048ababcffb9",
                 "shasum": ""
             },
             "require": {
                 "fpdf/fpdf": "^1.86",
-                "gp/dbms": "^1.0.8",
+                "gp/dbms": "1.0.9",
                 "gp/loader": "^2.0.12",
                 "gp/logger": "^0.0.4",
                 "gp/router": "^1.0.3",
@@ -277,7 +277,7 @@
                 }
             ],
             "description": "A simple PHP MVC framework with ORM, autoload, DI, Validator, etc support for simple application",
-            "time": "2025-06-01T10:24:36+00:00"
+            "time": "2025-07-12T18:37:29+00:00"
         },
         {
             "name": "gp/validator",

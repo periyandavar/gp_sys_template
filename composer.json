@@ -11,8 +11,9 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "gp/sys": "^0.0.2",
-        "symfony/yaml": "^6.4"
+        "gp/sys": "0.0.4",
+        "symfony/yaml": "^6.4",
+        "gp/dbms": "1.0.9"
     },
 
     "autoload": {
