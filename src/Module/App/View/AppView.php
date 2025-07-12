@@ -38,10 +38,11 @@ class AppView extends View
             'layout' => ['home'],]
 
         ];
+
+        // same action using built-in method
+        //  $this->addView('login', [
+        //             'heading' => 'Easily build your web application faster and more effectively with the GP Sys Simple PHP Framework.'
+        //         ], true);
+        //         $this->addLayout('home', true);
     }
 }
-
-//  $this->addView('login', [
-//             'heading' => 'Easily build your web application faster and more effectively with the GP Sys Simple PHP Framework.'
-//         ], true);
-//         $this->addLayout('home', true);

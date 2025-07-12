@@ -43,13 +43,17 @@ return [
 /**
  * Sets log file
  */
- 'logs' => 'log',
+//  'logs' => 'log',
+
+ 'logs' => [
+    'dir' => __DIR__ . '/../../logs',
+ ],
 /**
  * Session driver available options file|database
  */
 //  'session_driver'  => 'database',
 //  'session_driver'  => 'file',
- 'session_driver' => '',
+ 'session_driver' => 'database',
 /**
  * Session expiration time
  */

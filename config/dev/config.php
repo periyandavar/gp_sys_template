@@ -49,7 +49,7 @@ return [
  */
 //  'session_driver'  => 'database',
 //  'session_driver'  => 'file',
- 'session_driver' => '',
+ 'session_driver' => 'file',
 /**
  * Session expiration time
  */

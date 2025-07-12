@@ -312,6 +312,142 @@ Place migration files in the `migrations/` directory and run migration as follow
 php console/run migrate
 ```
 
+---
+
+## View Creation and Management
+
+Views in GP SYS are responsible for rendering the output of your application. Each module can have its own `View` directory containing view classes and templates.
+
+### Creating a View
+
+Create a view class in your module's `View` directory, for example:
+
+```php
+// src/Module/App/View/AppView.php
+namespace App\Module\App\View;
+
+use System\Core\Base\View\View;
+
+class AppView extends View
+{
+    public function getHomePage()
+    {
+        // You can use $this->render() to render a PHP template file
+        return $this->render('home.php', [
+            'title' => 'Welcome to GP SYS!',
+            'content' => 'This is the home page.'
+        ]);
+    }
+}
+```
+
+### Rendering a View in a Controller
+
+In your controller, instantiate the view and call its methods:
+
+```php
+// src/Module/App/Controller/AppController.php
+namespace App\Module\App\Controller;
+
+use App\Module\App\View\AppView;
+use System\Core\Base\Controller\Controller;
+
+class AppController extends Controller
+{
+    public function indexPage()
+    {
+        $view = new AppView();
+        $view->addContents($view->getHomePage());
+        return $view->get();
+    }
+}
+```
+
+### View Templates
+
+Templates are standard PHP files placed in your module's `View` directory (e.g., `src/Module/App/View/home.php`).  
+You can pass variables to templates using the `render()` method.
+
+**Example:**
+
+```php
+<!-- src/Module/App/View/home.php -->
+<h1><?= $title ?></h1>
+<p><?= $content ?></p>
+```
+
+### Managing Layouts and Partials
+
+You can organize your views with layouts and partials for reusable UI components.  
+Use `$this->render('partial.php', [...])` inside your view classes or templates to include partials.
+
+---
+
+**Tip:**  
+- Use the `addContents()` method to compose complex pages from multiple view fragments.
+- Keep your view logic minimal—focus on presentation, not business logic.
+
+---
+
+## Middleware
+
+Middleware in GP SYS allows you to filter and process HTTP requests and responses before they reach your controllers or after the response is generated. This is useful for tasks such as authentication, logging, input validation, and more.
+
+### Creating a Middleware
+
+Create your middleware class in the `src/Filters/` directory:
+
+```php
+// src/Filters/AppFilter.php
+namespace App\Filters;
+
+use System\Core\Base\Filter\Filter;
+
+class AppFilter extends Filter
+{
+    public function handle($request, $next)
+    {
+        // Pre-processing logic (e.g., authentication)
+        if (!$request->userIsAuthenticated()) {
+            // Redirect or abort
+            return $this->redirect('/login');
+        }
+
+        // Call the next middleware/controller
+        $response = $next($request);
+
+        // Post-processing logic (optional)
+        // ...
+
+        return $response;
+    }
+}
+```
+
+### Registering Middleware
+
+You can register middleware as follows
+
+- **Module/Route Middleware:** Register in your module’s `routes.php` or controller.
+
+**Example (per route):**
+
+```php
+// src/Module/App/routes.php
+return [
+    ['/', 'app/indexPage', ['middleware' => ['AppFilter']]],
+    ['/dashboard', 'app/dashboard', ['middleware' => ['AuthFilter']]],
+];
+```
+
+### How Middleware Works
+
+- Middleware classes must extend the base `Filter` class and implement the `handle` method.
+- Middleware can be chained; each one receives the request and a `$next` callback.
+- You can halt the request, modify it, or let it proceed to the next middleware/controller.
+
+---
+
 ### 6. Start the Application
 
 Point your web server to the `public/` directory and access your app in the browser.

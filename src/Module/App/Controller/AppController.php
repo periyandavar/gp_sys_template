@@ -7,9 +7,9 @@ use App\DataModel\Response\UserModel;
 use App\Module\App\Service\UserService;
 use App\Module\App\View\AppView;
 use Loader\Container;
-use Router\Request\Request;
-use Router\Response\Response;
 use System\Core\Base\Controller\WebController;
+use System\Core\Http\Request\Request;
+use System\Core\Http\Response\Response;
 
 class AppController extends WebController
 {
@@ -27,8 +27,8 @@ class AppController extends WebController
         /**
          * @var Response
          */
-        $response = Container::get(Response::class);
-        $this->loader->service(UserService::class, 'user');
+        $response = Container::get('response');
+        $this->module->getLoader()->service(UserService::class, 'user');
         if (! $userModel->validate()) {
             $response->setStatusCode(400);
             $errorModel = new ErrorModel();
